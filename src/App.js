@@ -5,6 +5,9 @@ import { motion, useAnimation } from 'framer-motion';
 import { Link as ScrollLink } from 'react-scroll';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
+import ProjectVideo from './Project_Video.mp4';
+import BingoVideo from './Bingo Recording.mp4';
+import StudentManagerVideo from './Student_Manager.mp4';
 
 
 const AppWrapper = styled.div`
@@ -162,14 +165,14 @@ const App = () => {
       description:
         'Match Point is a React and Django-based project that allows users to connect together with other users based on their favorite sports and their individual traits such as age, skill-level, play-frequency, competitiveness, etc.',
       // github: 'https://github.com/yourgithub/matchpoint',
-      media: '\Project_Video.mp4', // Corrected path
+      media: ProjectVideo,
     },
     {
       title: 'Customized Bingo Game',
       description:
         'A customizable Bingo game using Java that allows users to set their own card size and play with unique combinations of numbers. Implemented object-oriented programming concepts to ensure scalability and code reusability.',
       github: 'https://github.com/BharathSadineni/Customized_Bingo_Game',
-      media: '/Bingo Recording.mp4', // Corrected path
+      media: BingoVideo,
     },
     {
       title: 'Story Based Maze Game',
@@ -188,7 +191,7 @@ const App = () => {
       description:
         'Java program utilizing full stack and OOP techniques. This application offers a user-friendly interface built with FXML to easily store and manage student information, including names, IDs, and subjects. The user can edit and update the data with ease and efficiency.',
       github: 'https://github.com/BharathSadineni/StudentManager',
-      media: '/Student Manager.mp4', // Corrected path
+      media: StudentManagerVideo,
     },
   ];
   
