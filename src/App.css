@@ -1,0 +1,111 @@
+/* src/App.css */
+body {
+  margin: 0;
+  overflow-y: scroll;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+  background-color: #3498db;
+}
+
+.AppWrapper {
+  position: relative;
+}
+
+/* Section styles */
+.AnimatedSection {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Line styles */
+.Line {
+  border-top: 2px solid #fff;
+  width: 60%;
+  margin: 20px auto;
+}
+
+/* Projects styles */
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.AnimatedProjectCard {
+  width: 30%; /* Adjust the width as needed */
+  margin: 20px 0;
+  background-color: #333;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Skills styles */
+.AnimatedSkills {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.SkillItem {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/* Links styles */
+.AnimatedLinks {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  opacity: 0; /* Initial opacity set to 0 */
+  transition: opacity 0.5s ease;
+}
+
+.AnimatedLink {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.Icon {
+  margin-right: 5px;
+}
+
+/* Scroll to Top styles */
+.ScrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
